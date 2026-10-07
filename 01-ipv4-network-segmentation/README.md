@@ -17,7 +17,7 @@ The network contains:
 - 4 PCs
 - Copper straight-through Ethernet connections
 
-![Network Topology](images/topology.png)
+![Network Topology](Topology.png)
 
 ## IPv4 Addressing
 
@@ -68,11 +68,11 @@ Broadcast:
 The PC0 was not communicating with PC2 when I tested the connectivity using a ping.
 To fix this I checked the IP assigned to each router interface. I noticed I made a mistake assigning the IP 192.168.10.70 to interface G0/1. This address was intended to be used by PC2. I corrected the router interface to: 192.168.10.65
 
-
+![Wrong IP Configured](incorrect-ip-g01.png)
 A second test was performed after fixing. The ping returned four successful replies with 0% packet loss.
 This confirms that traffic can travel from one LAN to the router and then be routed to the second LAN.
 
-
+![Ping](cross-subnet-ping.png)
 ## Router Configuration
 
 The router connects both IPv4 networks.
